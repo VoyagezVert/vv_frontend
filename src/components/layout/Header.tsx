@@ -42,18 +42,24 @@ const Header: React.FC = () => {
             >
               Accueil
             </Link>
-            <a
-              href="#"
+            <Link
+              to="/transport"
               className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
             >
-              Destinations
-            </a>
-            <a
-              href="#"
+              Transport
+            </Link>
+            <Link
+              to="/hotels"
               className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
             >
-              Voyages Eco
-            </a>
+              Hébergements
+            </Link>
+            <Link
+              to="/activities"
+              className="text-gray-600 hover:text-primary-600 transition-colors duration-200"
+            >
+              Activités
+            </Link>
             <a
               href="#"
               className="text-gray-600 hover:text-primary-600 transition-colors duration-200"

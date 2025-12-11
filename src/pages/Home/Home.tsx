@@ -83,16 +83,22 @@ const Home: React.FC = () => {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth={2}
-                    d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9m0 9c-5 0-9-4-9-9s4-9 9-9"
+                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
                   />
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Destinations Éco-responsables
+                Hébergements Éco-responsables
               </h3>
-              <p className="text-gray-600">
-                Découvrez une sélection de destinations engagées dans la préservation de l'environnement.
+              <p className="text-gray-600 mb-4">
+                Découvrez des hébergements certifiés écologiques avec des labels durables.
               </p>
+              <Link
+                to="/hotels"
+                className="text-primary-600 hover:text-primary-700 font-semibold"
+              >
+                Explorer les hébergements →
+              </Link>
             </div>
 
             {/* Feature 2 */}
@@ -116,9 +122,15 @@ const Home: React.FC = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Transport Durable
               </h3>
-              <p className="text-gray-600">
-                Privilégiez les moyens de transport à faible impact carbone pour vos déplacements.
+              <p className="text-gray-600 mb-4">
+                Comparez les moyens de transport selon leur impact environnemental.
               </p>
+              <Link
+                to="/transport"
+                className="text-primary-600 hover:text-primary-700 font-semibold"
+              >
+                Comparer les transports →
+              </Link>
             </div>
 
             {/* Feature 3 */}
@@ -140,11 +152,17 @@ const Home: React.FC = () => {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
-                Impact Positif
+                Activités Durables
               </h3>
-              <p className="text-gray-600">
-                Calculez et compensez l'empreinte carbone de vos voyages pour un impact positif.
+              <p className="text-gray-600 mb-4">
+                Planifiez des activités qui respectent l'environnement et les communautés locales.
               </p>
+              <Link
+                to="/activities"
+                className="text-primary-600 hover:text-primary-700 font-semibold"
+              >
+                Découvrir les activités →
+              </Link>
             </div>
           </div>
         </div>
